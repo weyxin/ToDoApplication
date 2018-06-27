@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // obtain a reference to the ListView created with the layout
-        lvItems = (ListView) findViewById(R.id.lvItems);
+        lvItems = findViewById(R.id.lvItems);
         // initialize the items list
         readItems();
         // initialize the adapter using the items list
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onAddItem(View v) {
         // obtain a reference to the EditText created with the layout
-        EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
+        EditText etNewItem = findViewById(R.id.etNewItem);
         // grab the EditText's content as a String
         String itemText = etNewItem.getText().toString();
         // add the item to the list via the adapter
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     private void readItems() {
         try {
             // create the array using the content in the file
-            items = new ArrayList<String>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
+            items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
         } catch (IOException e) {
             // print the error to the console
             e.printStackTrace();

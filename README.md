@@ -1,4 +1,4 @@
-# ToDoApplication
+# To Do Application
 A simple to do list manager
 
 # Project 1 - *To Do Application*

@@ -5,8 +5,6 @@ A simple to do list manager
 
 **To Do Application** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-Submitted by: **Weyxin Ly**
-
 Time spent: **5** hours spent in total
 
 ## User Stories
@@ -32,7 +30,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
-    Copyright [2018] [Weyxin Ly]
+    Copyright [2018]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
